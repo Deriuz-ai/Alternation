@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>OPSI</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script
+      src="https://use.fontawesome.com/releases/v6.3.0/js/all.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Google fonts-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <style>
+      /* Equal Height Services */
+      .row.text-center.mb-5 {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .row.text-center.mb-5 .col-md-4 {
+        display: flex;
+        margin-bottom: 2rem;
+      }
+
+      .service-item {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .service-item p {
+        flex-grow: 1;
+        margin-bottom: 0;
+      }
+    </style>
+  </head>
+
+  <body id="page-top">
+    <noscript>
+      <div
+        style="
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          background: #ffc800;
+          color: #000;
+          text-align: center;
+          padding: 10px;
+          z-index: 9999;
+        "
+      >
+        Please enable JavaScript to use all features of this website.
+      </div>
+    </noscript>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand" href="#page-top"
+          ><img src="assets/img/navbar-logo.png" alt="OPSI Logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          Menu
+          <i class="fas fa-bars ms-1"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Solusi Kami</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">Tentang Kami</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Masthead-->
+    <header class="masthead">
+      <div class="container">
+        <div class="masthead-subheading">
+          "Bertani cerdas dengan inovasi,<br />
+          untuk <b>Masa Depan</b> yang lebih sejahtera."
+        </div>
+        <div class="masthead-heading text-uppercase">
+          Petani maju, Indonesia kuat.
+        </div>
+        <a class="btn btn-primary btn-xl text-uppercase" href="#services"
+          >Solusi Kami</a
+        >
+      </div>
+    </header>
+    <!-- Services-->
+    <section class="page-section" id="services">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-heading text-uppercase">Solusi Kami</h2>
+          <h3 class="section-subheading">
+            Membantu petani mengadopsi berbagai inovasi pertanian, mulai dari
+            penggunaan teknologi modern hingga penerapan metode kerja yang lebih
+            efisien dan berkelanjutan.
+          </h3>
+        </div>
+
+        <!-- Services Row -->
+        <div class="row text-center mb-5">
+          <div class="col-md-4 mb-4">
+            <div class="service-item">
+              <span class="fa-stack fa-4x">
+                <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                <i class="fa-solid fa-wheat-awn fa-stack-1x fa-inverse"></i>
+              </span>
+              <h4 class="my-3">Petani Tanaman Pangan</h4>
+              <p class="text-muted">
+                Menanam padi, jagung, dan kedelai. Penting untuk ketahanan
+                pangan nasional.
+              </p>
+              <button
+                type="button"
+                class="btn btn-primary mt-3"
+                data-bs-toggle="modal"
+                data-bs-target="#portfolioModal1"
+              >
+                Pilih
+              </button>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="service-item">
+              <span class="fa-stack fa-4x">
+                <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                <i class="fa-solid fa-seedling fa-stack-1x fa-inverse"></i>
+              </span>
+              <h4 class="my-3">Petani Hortikultura</h4>
+              <p class="text-muted">
+                Menanam sayur dan buah. Butuh distribusi cepat agar tetap segar.
+              </p>
+              <button
+                type="button"
+                class="btn btn-primary mt-3"
+                data-bs-toggle="modal"
+                data-bs-target="#portfolioModal2"
+              >
+                Pilih
+              </button>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="service-item">
+              <span class="fa-stack fa-4x">
+                <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                <i class="fa-solid fa-cow fa-stack-1x fa-inverse"></i>
+              </span>
+              <h4 class="my-3">Peternak</h4>
+              <p class="text-muted">
+                Memelihara sapi, ayam, dan kambing. Hasilnya berupa daging,
+                susu, dan telur.
+              </p>
+              <button
+                type="button"
+                class="btn btn-primary mt-3"
+                data-bs-toggle="modal"
+                data-bs-target="#portfolioModal3"
+              >
+                Pilih
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Portfolio Section -->
+    <section class="page-section bg-light" id="portfolio">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-heading text-uppercase">Informasi Lebih Lanjut</h2>
+          <h3 class="section-subheading text-muted">
+            Video Cara Penggunaan Alat
+          </h3>
+        </div>
+        <div class="row">
+          <!-- Portfolio Item 1 -->
+          <div class="col-lg-4 col-sm-6 mb-4">
+            <div class="portfolio-item">
+              <a
+                class="portfolio-link"
+                data-bs-toggle="modal"
+                href="#portfolioModal4"
+              >
+                <div class="portfolio-hover">
+                  <div class="portfolio-hover-content">
+                    <i class="fa-solid fa-magnifying-glass fa-3x"></i>
+                  </div>
+                </div>
+                <img
+                  class="img-fluid"
+                  src="assets/img/portfolio/1.jpg"
+                  alt="Portfolio 1"
+                />
+              </a>
+              <div class="portfolio-caption">
+                <div class="portfolio-caption-heading">
+                  Petani Tanaman Pangan
+                </div>
+                <div class="portfolio-caption-subheading text-muted">
+            
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Portfolio Item 2 -->
+          <div class="col-lg-4 col-sm-6 mb-4">
+            <div class="portfolio-item">
+              <a
+                class="portfolio-link"
+                data-bs-toggle="modal"
+                href="#portfolioModal5"
+              >
+                <div class="portfolio-hover">
+                  <div class="portfolio-hover-content">
+                    <i class="fa-solid fa-magnifying-glass fa-3x"></i>
+                  </div>
+                </div>
+                <img
+                  class="img-fluid"
+                  src="assets/img/portfolio/2.jpg"
+                  alt="Portfolio 2"
+                />
+              </a>
+              <div class="portfolio-caption">
+                <div class="portfolio-caption-heading">Petani Hortikultura</div>
+                <div class="portfolio-caption-subheading text-muted">
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Portfolio Item 3 -->
+          <div class="col-lg-4 col-sm-6 mb-4">
+            <div class="portfolio-item">
+              <a
+                class="portfolio-link"
+                data-bs-toggle="modal"
+                href="#portfolioModal6"
+              >
+                <div class="portfolio-hover">
+                  <div class="portfolio-hover-content">
+                    <i class="fa-solid fa-magnifying-glass fa-3x"></i>
+                  </div>
+                </div>
+                <img
+                  class="img-fluid"
+                  src="assets/img/portfolio/3.jpg"
+                  alt="Portfolio 3"
+                />
+              </a>
+              <div class="portfolio-caption">
+                <div class="portfolio-caption-heading">Peternak</div>
+                <div class="portfolio-caption-subheading text-muted">
+                
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Modals -->
+    <!-- Modal 1 -->
+    <div
+      class="portfolio-modal modal fade"
+      id="portfolioModal1"
+      tabindex="-1"
+      aria-labelledby="portfolioModal1Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <button
+            class="close-modal"
+            type="button"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h2 id="portfolioModal1Label">Petani Tanaman Pangan</h2>
+          <img
+            class="img-fluid"
+            src="assets/img/portfolio/1.jpg"
+            alt="Portfolio 1"
+          />
+          <p>
+            Petani tanaman pangan bertanggung jawab atas ketahanan pangan suatu
+            negara. Mereka berkonsentrasi pada produk utama seperti padi,
+            jagung, kedelai, dan ubi. Petani saat ini didukung oleh berbagai
+            teknologi dan aplikasi untuk menghadapi tantangan zaman sekarang.
+          </p>
+          <hr />
+          <h3>Aplikasi untuk Manajemen Pertanian dan Penjualan</h3>
+          <p>
+            <strong>RiTx Bertani:</strong> Aplikasi ini berfokus pada solusi
+            teknologi untuk meningkatkan produktivitas. Fitur-fiturnya membantu
+            petani dalam mengelola dan memantau kegiatan pertanian secara
+            digital, mulai dari persiapan lahan, penanaman, pemupukan, hingga
+            panen.
+          </p>
+          <p>
+            <strong>Pak Tani Digital:</strong> Platform ini menghubungkan petani
+            dengan berbagai pihak, mulai dari pembeli hasil panen, pemasok alat
+            pertanian, hingga lembaga keuangan. Terdapat fitur Pasar Online yang
+            memungkinkan petani menjual hasil panennya secara langsung.
+          </p>
+          <hr/>
+          <h3>Alat Modern dalam Pertanian Tanaman Pangan</h3>
+          <p>
+            Teknologi modern membantu petani tanaman pangan bekerja lebih cepat,
+            efisien, dan menghasilkan panen yang lebih baik. Berikut beberapa
+            alat dan teknologi yang penting digunakan:
+          </p>
+          <ul>
+            <li>
+              <strong>Traktor Mini dan Cultivator:</strong> Alat seperti
+              <em>Kubota KL200</em> dan <em>Honda FJ500</em> dapat membajak,
+              menggemburkan, dan meratakan lahan dengan cepat, menghemat waktu
+              dan tenaga dibandingkan metode tradisional.
+            </li>
+            <li>
+              <strong>Transplanter:</strong> Alat penanam bibit padi otomatis
+              ini menjamin jarak tanam yang seragam dan penanaman yang presisi,
+              menghasilkan pertumbuhan tanaman yang optimal.
+            </li>
+            <li>
+              <strong>Mesin Panen Kombinasi:</strong> Traktor seperti
+              <em>Kubota DC-70G</em> dan <em>Yanmar AW82V</em> dapat memotong,
+              merontokkan, dan memisahkan gabah dalam satu proses. Hal ini
+              mempercepat panen dan meminimalkan kehilangan hasil.
+            </li>
+            <li>
+              <strong>Teknologi Pintar (Smart Farming):</strong> Sistem
+              Manajemen Ladang (FMS) memungkinkan pemantauan kelembapan tanah,
+              suhu, dan prakiraan cuaca dari jarak jauh menggunakan sensor,
+              membantu pengambilan keputusan yang lebih baik.
+            </li>
+            <li>
+              <strong>Sensor Irigasi Otomatis:</strong> Sensor ini mengukur
+              kelembapan tanah dan mengaktifkan irigasi secara otomatis saat
+              diperlukan. Hasilnya: penggunaan air lebih hemat dan tanaman tetap
+              terairi tepat waktu.
+            </li>
+            <li>
+              <strong>Prediksi Cuaca & Hasil Panen:</strong> Menggunakan data
+              satelit dan kecerdasan buatan (AI), teknologi ini membantu petani
+              mengantisipasi cuaca ekstrem dan mempersiapkan panen atau
+              pemasaran lebih dini.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Modal 2 -->
+    <div
+      class="portfolio-modal modal fade"
+      id="portfolioModal2"
+      tabindex="-1"
+      aria-labelledby="portfolioModal2Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <button
+            class="close-modal"
+            type="button"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h2 id="portfolioModal2Label">Petani Hortikultura</h2>
+          <img
+            class="img-fluid"
+            src="assets/img/portfolio/2.jpg"
+            alt="Portfolio 2"
+          />
+          <p>
+            Petani hortikultura fokus pada budidaya sayuran, buah-buahan, dan tanaman hias. Mereka menghadapi tantangan khusus seperti ketahanan produk yang rendah dan kebutuhan distribusi yang cepat. Teknologi modern membantu mengatasi tantangan ini dengan solusi yang inovatif.
+          </p>
+          <hr/>
+          <h3>Aplikasi untuk Pertanian Hortikultura</h3>
+          <p>
+            <strong>Sayurbox:</strong> Platform ini menghubungkan lebih dari 10.000 petani hortikultura dengan konsumen di kota besar. Dengan logistik yang cepat dan berpendingin, Sayurbox memastikan produk tetap segar saat sampai ke tangan pelanggan. Teknologinya mencakup perencanaan tanam, optimasi pengiriman, dan pemantauan permintaan.
+          </p>
+          <p>
+            <strong>RiTx (MSMB):</strong> Aplikasi ini membantu petani mencatat kegiatan budidaya secara digital. Fitur-fiturnya mendukung praktik pertanian yang lebih profesional dan terencana, mulai dari penanaman hingga panen.
+          </p>
+          <hr/>
+          <h3>Alat Modern dalam Pertanian Hortikultura</h3>
+          <p>
+            Teknologi modern membantu petani hortikultura menghasilkan produk berkualitas tinggi dengan efisiensi yang lebih baik. Berikut beberapa alat dan teknologi yang penting digunakan:
+          </p>
+          <ul>
+            <li>
+              <strong>Drone Pertanian:</strong> Drone seperti <em>DJI Agras T10</em> dan <em>T20</em> digunakan untuk menyemprot pestisida dan pupuk secara merata dan presisi. Alat ini mengurangi penggunaan bahan kimia dan menjangkau area sulit.
+            </li>
+            <li>
+              <strong>Mesin Penanam Baris & Penyiang Otomatis:</strong> Alat ini menanam sayuran seperti wortel dan bawang secara cepat dan teratur. Penyiang otomatis juga membersihkan gulma tanpa merusak tanaman utama.
+            </li>
+            <li>
+              <strong>Sensor Tanah & Irigasi Otomatis:</strong> Teknologi ini mengukur kelembapan, keasaman, dan kandungan nitrogen tanah. Sistem irigasi otomatis aktif saat tanah mulai kering, sehingga penggunaan air lebih hemat.
+            </li>
+            <li>
+              <strong>Greenhouse dengan Kontrol Iklim:</strong> Sistem otomatis mengatur suhu, kelembapan, dan ventilasi dalam greenhouse. Teknologi ini memungkinkan budidaya sepanjang tahun tanpa tergantung cuaca.
+            </li>
+            <li>
+              <strong>Mesin Sortir & Grading Otomatis:</strong> Alat ini memisahkan produk berdasarkan ukuran, warna, dan kualitas secara otomatis. Hasilnya: produk yang seragam dan siap untuk pasar premium.
+            </li>
+            <li>
+              <strong>Cold Storage & Transportasi Berpendingin:</strong> Sistem penyimpanan dan pengangkutan dingin mempertahankan kesegaran produk dari kebun hingga ke konsumen, mengurangi kerusakan dan kehilangan hasil.
+            </li>
+          </ul>
+  </li>
+  <li>
+    <strong>Greenhouse & Hidroponik:</strong> Sistem ini membantu menjaga stabilitas suhu dan kelembapan tanaman. Cocok untuk menghadapi cuaca ekstrem dan lahan terbatas.
+  </li>
+</ul>
+
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Modal 3 -->
+    <div
+      class="portfolio-modal modal fade"
+      id="portfolioModal3"
+      tabindex="-1"
+      aria-labelledby="portfolioModal3Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <button
+            class="close-modal"
+            type="button"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h2 id="portfolioModal3Label">Peternak</h2>
+          <img
+            class="img-fluid"
+            src="assets/img/portfolio/3.jpg"
+            alt="Portfolio 3"
+          />
+          <p>
+            Peternak modern menggunakan data dan intuisi lebih dari sebelumnya. Teknologi dapat meningkatkan efisiensi, kesehatan ternak, dan manajemen bisnis.
+          </p>
+          <hr/>
+          <h3>Aplikasi Pendukung Peternakan</h3>
+          <p>
+            <strong>iGrow:</strong> Platform ini menghubungkan investor dengan peternak, menyediakan perangkat manajemen berbasis cloud untuk produksi dan logistik peternakan.
+          </p>
+          <p>
+            <strong>Koltiva:</strong> Melalui aplikasi seperti KoltiTrace dan KoltiPay, peternak bisa melacak produk hingga konsumen, serta menggunakan layanan keuangan digital seperti e-wallet dan pinjaman mikro.
+          </p>
+          <p>
+            <strong>AgriWebb:</strong> Aplikasi ini membantu mencatat data ternak, memetakan area peternakan, serta memonitor kesehatan hewan. Fitur mencakup pencatatan vaksinasi, pola makan, dan manajemen pakan.
+          </p>
+          <hr/>
+          <h3>Teknologi Cerdas dalam Peternakan</h3>
+          <p>
+            Teknologi modern membantu peternak mengelola ternak dengan lebih efisien dan profesional. Berikut beberapa teknologi yang penting digunakan:
+          </p>
+          <ul>
+            <li>
+              <strong>Sensor IoT:</strong> Alat ini dipasang pada ternak untuk memantau suhu tubuh, aktivitas, dan pola makan. Informasi yang dikumpulkan digunakan untuk mendeteksi penyakit lebih awal.
+            </li>
+            <li>
+              <strong>Aplikasi Pencatatan Ternak:</strong> Dengan fitur pencatatan digital seperti di AgriWebb, peternak dapat mengelola riwayat vaksinasi, silsilah, performa harian, dan jadwal pemberian pakan.
+            </li>
+            <li>
+              <strong>Drone Monitoring:</strong> Drone digunakan untuk memantau ternak di area yang luas, membantu peternak mengawasi kesehatan dan lokasi ternak secara real-time.
+            </li>
+            <li>
+              <strong>Sistem Pakan Otomatis:</strong> Teknologi ini mengatur pemberian pakan secara otomatis berdasarkan jadwal dan kebutuhan nutrisi ternak, memastikan pemberian pakan yang tepat waktu dan terukur.
+            </li>
+            <li>
+              <strong>Smart Barn Management:</strong> Sistem ini mengatur suhu, kelembapan, dan ventilasi kandang secara otomatis, menciptakan lingkungan yang optimal untuk kesehatan ternak.
+            </li>
+            <li>
+              <strong>Blockchain Traceability:</strong> Teknologi blockchain memungkinkan pelacakan produk ternak dari peternakan hingga ke konsumen, meningkatkan transparansi dan kepercayaan pasar.
+            </li>
+          </ul>
+          <hr/>
+          <h3>Akses Pasar dan Keuangan Digital</h3>
+          <p>
+            Peternak saat ini memanfaatkan QRIS dan e-wallet untuk kemudahan transaksi. Selain itu, media sosial seperti Instagram dan TikTok Shop dimanfaatkan untuk menjual produk olahan atau hasil ternak langsung ke konsumen, tanpa perantara.
+          </p>
+          <p>
+            Digitalisasi dalam dunia peternakan bukan hanya soal aplikasi, tetapi merupakan ekosistem yang menghubungkan peternak, pasar, investor, dan teknologi. Hal ini memungkinkan peningkatan efisiensi, manajemen berbasis data, serta akses pasar yang lebih luas dan cepat.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+  class="portfolio-modal modal fade"
+  id="portfolioModal4"
+  tabindex="-1"
+  aria-labelledby="portfolioModal4Label"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <button
+        class="close-modal"
+        type="button"
+        data-bs-dismiss="modal"
+        aria-label="Close"
+      >
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <h2 id="portfolioModal4Label">Petani Tanaman Pangan</h2>
+      <ul>
+        <li>
+          <strong>Traktor Mini dan Cultivator:</strong> Alat seperti
+          <em>Kubota KL200</em> dan <em>Honda FJ500</em> dapat membajak,
+          menggemburkan, dan meratakan lahan dengan cepat, menghemat waktu
+          dan tenaga dibandingkan metode tradisional.
+        </li>
+        <div class="responsive-iframe-wrapper">
+          <iframe src="https://www.youtube.com/embed/qGUf6E_3NW8" title="Cara Mengoperasikan Alat Mesin Pertanian Cultivator" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <li>
+          <strong>Transplanter:</strong> Alat penanam bibit padi otomatis
+          ini menjamin jarak tanam yang seragam dan penanaman yang presisi,
+          menghasilkan pertumbuhan tanaman yang optimal.
+        </li>
+        <div class="responsive-iframe-wrapper">
+          <iframe src="https://www.youtube.com/embed/qKy3aDNFZhA" title="tutorial jarwo RT-21H ( indo jarwo ) TANIKAYA RICE TRANSPLANTER" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <li>
+          <strong>Mesin Panen Kombinasi:</strong> Traktor seperti
+          <em>Kubota DC-70G</em> dan <em>Yanmar AW82V</em> dapat memotong,
+          merontokkan, dan memisahkan gabah dalam satu proses. Hal ini
+          mempercepat panen dan meminimalkan kehilangan hasil.
+        </li>
+        <div class="responsive-iframe-wrapper">
+          <iframe src="https://www.youtube.com/embed/5s8EZFaWnPs" title="LAUNCHING KUBOTA DC70 PRO DETAIL FITUR TAMBAHAN" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="responsive-iframe-wrapper">
+          <iframe src="https://www.youtube.com/embed/Tvu4RURff8c" title="KOMBI YANMAR AW82V - MT2 2023 #akibmutohar" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </ul>
+    </div>
+  </div>
+</div>
+<div
+  class="portfolio-modal modal fade"
+  id="portfolioModal5"
+  tabindex="-1"
+  aria-labelledby="portfolioModal5Label"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <button
+        class="close-modal"
+        type="button"
+        data-bs-dismiss="modal"
+        aria-label="Close"
+      >
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <h2 id="portfolioModal5Label">Petani Hortikultura</h2>
+      <ul>
+        <li>
+          <strong>Drone Pertanian:</strong> Drone seperti <em>DJI Agras T10</em> dan <em>T20</em> digunakan untuk menyemprot pestisida dan pupuk secara merata dan presisi. Alat ini mengurangi penggunaan bahan kimia dan menjangkau area sulit.
+        </li>
+        <div class="responsive-iframe-wrapper">
+          <iframe src="https://www.youtube.com/embed/40hTY5j8FCw" title="Drone DJI Agras T20 dengan tangki penabur benih &amp; baja | Bogam Corporation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <li>
+          <strong>Mesin Penanam Baris & Penyiang Otomatis:</strong> Alat ini menanam sayuran seperti wortel dan bawang secara cepat dan teratur. Penyiang otomatis juga membersihkan gulma tanpa merusak tanaman utama.
+        </li>
+        <div class="responsive-iframe-wrapper">
+          <iframe src="https://www.youtube.com/embed/c_KviJht_Mk" title="Garford Robocrop Inrow Weeder" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <li>
+          <strong>Sensor Tanah & Irigasi Otomatis:</strong> Teknologi ini mengukur kelembapan, keasaman, dan kandungan nitrogen tanah. Sistem irigasi otomatis aktif saat tanah mulai kering, sehingga penggunaan air lebih hemat.
+        </li>
+        <div class="responsive-iframe-wrapper">
+          <iframe src="https://www.youtube.com/embed/gBzMF7A-kL8" title="Penyiram Tanaman Otomatis Soil Moisture Sensor VLOG118" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <li>
+          <strong>Greenhouse dengan Kontrol Iklim:</strong> Sistem otomatis mengatur suhu, kelembapan, dan ventilasi dalam greenhouse. Teknologi ini memungkinkan budidaya sepanjang tahun tanpa tergantung cuaca.
+        </li>
+        <div class="responsive-iframe-wrapper">
+          <iframe src="https://www.youtube.com/embed/8yUu_5ZMYs4" title="Sudah taukah apa itu sistem pengaturan iklim dari greenhouse !!!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </ul>
+</li>
+<li>
+<strong>Greenhouse & Hidroponik:</strong> Sistem ini membantu menjaga stabilitas suhu dan kelembapan tanaman. Cocok untuk menghadapi cuaca ekstrem dan lahan terbatas.
+</li>
+<div class="responsive-iframe-wrapper">
+  <iframe src="https://www.youtube.com/embed/F802LVONUvA" title="4 Sistem Hidroponik yang WAJIB Kamu Tahu!! | 4 System of Hydroponics" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+</ul>
+    </div>
+  </div>
+</div>
+<div
+  class="portfolio-modal modal fade"
+  id="portfolioModal6"
+  tabindex="-1"
+  aria-labelledby="portfolioModal6Label"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <button
+        class="close-modal"
+        type="button"
+        data-bs-dismiss="modal"
+        aria-label="Close"
+      >
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <h2 id="portfolioModal6Label">Peternak</h2>
+      <ul>
+        <li>
+          <strong>Sensor IoT:</strong> Alat ini dipasang pada ternak untuk memantau suhu tubuh, aktivitas, dan pola makan. Informasi yang dikumpulkan digunakan untuk mendeteksi penyakit lebih awal.
+        </li>
+        <li>
+          <strong>Aplikasi Pencatatan Ternak:</strong> Dengan fitur pencatatan digital seperti di AgriWebb, peternak dapat mengelola riwayat vaksinasi, silsilah, performa harian, dan jadwal pemberian pakan.
+        </li>
+        <li>
+          <strong>Drone Monitoring:</strong> Drone digunakan untuk memantau ternak di area yang luas, membantu peternak mengawasi kesehatan dan lokasi ternak secara real-time.
+        </li>
+        <li>
+          <strong>Sistem Pakan Otomatis:</strong> Teknologi ini mengatur pemberian pakan secara otomatis berdasarkan jadwal dan kebutuhan nutrisi ternak, memastikan pemberian pakan yang tepat waktu dan terukur.
+        </li>
+        <li>
+          <strong>Smart Barn Management:</strong> Sistem ini mengatur suhu, kelembapan, dan ventilasi kandang secara otomatis, menciptakan lingkungan yang optimal untuk kesehatan ternak.
+        </li>
+        <li>
+          <strong>Blockchain Traceability:</strong> Teknologi blockchain memungkinkan pelacakan produk ternak dari peternakan hingga ke konsumen, meningkatkan transparansi dan kepercayaan pasar.
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+    <!-- About-->
+    <section class="page-section" id="about">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-heading text-uppercase">Tentang Kami</h2>
+        </div>
+        <ul class="timeline">
+          <li>
+            <div class="timeline-image">
+              <img
+                class="rounded-circle img-fluid"
+                src="assets/img/about/1.jpg"
+                alt="Timeline Image 1"
+              />
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4>16 April 2025</h4>
+                <h4 class="subheading">Awal Perjalanan Kami</h4>
+              </div>
+              <div class="timeline-body">
+                <p class="text-muted">
+                  Berawal dari kepedulian terhadap petani yang masih bergantung
+                  pada cara tradisional, kami melihat perlunya perubahan. Dari
+                  ide sederhana, kami menciptakan solusi digital untuk membantu
+                  pertanian menjadi lebih modern, efisien, dan berkelanjutan.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="timeline-inverted">
+            <div class="timeline-image">
+              <img
+                class="rounded-circle img-fluid"
+                src="assets/img/about/2.jpg"
+                alt="Timeline Image 2"
+              />
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4>20 April 2025</h4>
+                <h4 class="subheading">Projek Baru Dimulai</h4>
+              </div>
+              <div class="timeline-body">
+                <p class="text-muted">
+                  Pertanian merupakan sektor vital bagi Indonesia, namun banyak
+                  petani masih bergantung pada metode tradisional yang kurang
+                  efisien dan melelahkan. Di sisi lain, kemajuan teknologi belum
+                  dimanfaatkan secara optimal di bidang ini. Minimnya regenerasi
+                  petani muda juga menjadi tantangan besar. Melihat hal ini,
+                  kami menghadirkan sebuah inisiatif digital untuk membantu
+                  petani bertransformasi ke arah pertanian yang lebih modern,
+                  mudah, dan berkelanjutan.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-image">
+              <img
+                class="rounded-circle img-fluid"
+                src="assets/img/about/3.jpg"
+                alt="Timeline Image 3"
+              />
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4>24 April 2025</h4>
+                <h4 class="subheading"></h4>
+              </div>
+              <div class="timeline-body">
+                <p class="text-muted">
+                  kami menciptakan website ini sebagai platform edukasi yang
+                  bertujuan memberikan pengetahuan dan keterampilan yang
+                  dibutuhkan petani untuk beradaptasi dengan teknologi dan
+                  metode pertanian modern. Dengan cara ini, kami berharap dapat
+                  meningkatkan produktivitas, efisiensi, dan kesejahteraan
+                  petani di seluruh Indonesia.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="timeline-inverted">
+            <div class="timeline-image">
+              <h4>
+                Menuju Generasi
+                <br />
+                Petani Digital
+                <br />
+                Yang Inovatif dan Kreatif!!
+              </h4>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <!-- * *                               SB Forms JS                               * *-->
+    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+  </body>
+</html>
