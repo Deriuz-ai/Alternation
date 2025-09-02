@@ -100,6 +100,9 @@
             <li class="nav-item">
               <a class="nav-link" href="#about">Tentang Kami</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#faq">FAQ</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -680,6 +683,201 @@
     </div>
   </div>
 </div>
+
+<!--Data Produksi & Musim Tanam-->
+<div class="section-tanam">
+  <h2 class="judul-tanam">Cocok Ditanam Jika…</h2>
+
+  <div class="pilihan-komoditas">
+    <label for="pilihTanaman">Pilih Tanaman:</label>
+    <select id="pilihTanaman">
+      <option value="">Pilih</option>
+      <!-- 🌾 Tanaman Pangan -->
+  <option value="Padi">Padi</option>
+  <option value="Jagung">Jagung</option>
+  <option value="Kedelai">Kedelai</option>
+  <option value="Ubi Kayu">Ubi Kayu / Singkong</option>
+  <option value="Ubi Jalar">Ubi Jalar</option>
+
+  <!-- 🥬 Hortikultura -->
+  <option value="Kangkung">Kangkung</option>
+  <option value="Bayam">Bayam</option>
+  <option value="Sawi">Sawi</option>
+  <option value="Selada">Selada</option>
+  <option value="Cabai">Cabai</option>
+  <option value="Tomat">Tomat</option>
+  <option value="Terong">Terong</option>
+  <option value="Mentimun">Mentimun</option>
+  <option value="Bawang Merah">Bawang Merah</option>
+  <option value="Bawang Putih">Bawang Putih</option>
+  <option value="Wortel">Wortel</option>
+  <option value="Pepaya">Pepaya</option>
+  <option value="Semangka">Semangka</option>
+  <option value="Melon">Melon</option>
+  <option value="Pisang">Pisang</option>
+
+  <!-- 🌴 Perkebunan -->
+  <option value="Kelapa Sawit">Kelapa Sawit</option>
+  <option value="Karet">Karet</option>
+  <option value="Kopi">Kopi</option>
+  <option value="Kakao">Kakao (Cokelat)</option>
+  <option value="Tebu">Tebu</option>
+
+  <!-- 🌱 Tanaman Nilai Tinggi -->
+  <option value="Vanili">Vanili</option>
+  <option value="Jahe">Jahe</option>
+  <option value="Kunyit">Kunyit</option>
+  <option value="Kencur">Kencur</option>
+  <option value="Tembakau">Tembakau</option>
+  <option value="Porang">Porang</option>
+    </select>
+  </div>
+
+  <table class="tabel-tanam" id="tabelTanam" style="display: none;">
+    <thead>
+      <tr>
+        <th>Musim Tanam</th>
+        <th>Keperluan Tumbuhan</th>
+        <th>Suhu Ideal Dan Kondisi Tanah</th>
+      </tr>
+    </thead>
+    <tbody id="isiTabel"></tbody>
+  </table>
+
+  <div class="info-tanam" id="infoTanam">
+    Pilih Salah Satu Tumbuhan 
+</div>
+
+
+<div class="farm-container">
+  <h1 class="farm-title">Kalkulator & Simulasi Pertanian</h1>
+
+  <!-- Kalkulator Pupuk -->
+  <div class="farm-section">
+    <h2>Kalkulator Pupuk</h2>
+    <form class="farm-form" id="formPupuk">
+      <label for="luas">Luas Lahan (hektar):</label>
+      <input type="number" id="luas" required min="0.1" step="0.1">
+
+      <label for="tanaman">Jenis Tanaman:</label>
+      <select id="tanaman" required>
+        <option value="">- Pilih Tanaman -</option>
+        <!-- 🌾 Tanaman Pangan -->
+  <option value="Padi">Padi</option>
+  <option value="Jagung">Jagung</option>
+  <option value="Kedelai">Kedelai</option>
+  <option value="Ubi Kayu">Ubi Kayu / Singkong</option>
+  <option value="Ubi Jalar">Ubi Jalar</option>
+
+  <!-- 🥬 Hortikultura -->
+  <option value="Kangkung">Kangkung</option>
+  <option value="Bayam">Bayam</option>
+  <option value="Sawi">Sawi</option>
+  <option value="Selada">Selada</option>
+  <option value="Cabai">Cabai</option>
+  <option value="Tomat">Tomat</option>
+  <option value="Terong">Terong</option>
+  <option value="Mentimun">Mentimun</option>
+  <option value="Bawang Merah">Bawang Merah</option>
+  <option value="Bawang Putih">Bawang Putih</option>
+  <option value="Wortel">Wortel</option>
+  <option value="Pepaya">Pepaya</option>
+  <option value="Semangka">Semangka</option>
+  <option value="Melon">Melon</option>
+  <option value="Pisang">Pisang</option>
+
+  <!-- 🌴 Perkebunan -->
+  <option value="Kelapa Sawit">Kelapa Sawit</option>
+  <option value="Karet">Karet</option>
+  <option value="Kopi">Kopi</option>
+  <option value="Kakao">Kakao (Cokelat)</option>
+  <option value="Tebu">Tebu</option>
+
+  <!-- 🌱 Tanaman Nilai Tinggi -->
+  <option value="Vanili">Vanili</option>
+  <option value="Jahe">Jahe</option>
+  <option value="Kunyit">Kunyit</option>
+  <option value="Kencur">Kencur</option>
+  <option value="Tembakau">Tembakau</option>
+  <option value="Porang">Porang</option>
+      </select>
+
+      <button type="submit" class="farm-btn farm-btn-calc">Hitung</button>
+      <button type="reset" class="farm-btn farm-btn-reset">Reset</button>
+    </form>
+    <div id="hasilPupuk" class="farm-result" style="display:none;"></div>
+  </div>
+
+  <!-- Simulasi Biaya Tanam -->
+  <div class="farm-section">
+    <h2>Simulasi Biaya Tanam</h2>
+    <form class="farm-form" id="formBiaya">
+      <label>Luas Lahan (ha):</label>
+      <input type="number" id="biayaLuas" required min="0.1" step="0.1">
+
+      <label>Jenis Tanaman:</label>
+      <select id="biayaTanaman" required>
+        <option value="Padi">Padi</option>
+  <option value="Jagung">Jagung</option>
+  <option value="Kedelai">Kedelai</option>
+  <option value="Ubi Kayu">Ubi Kayu / Singkong</option>
+  <option value="Ubi Jalar">Ubi Jalar</option>
+
+  <!-- 🥬 Hortikultura -->
+  <option value="Kangkung">Kangkung</option>
+  <option value="Bayam">Bayam</option>
+  <option value="Sawi">Sawi</option>
+  <option value="Selada">Selada</option>
+  <option value="Cabai">Cabai</option>
+  <option value="Tomat">Tomat</option>
+  <option value="Terong">Terong</option>
+  <option value="Mentimun">Mentimun</option>
+  <option value="Bawang Merah">Bawang Merah</option>
+  <option value="Bawang Putih">Bawang Putih</option>
+  <option value="Wortel">Wortel</option>
+  <option value="Pepaya">Pepaya</option>
+  <option value="Semangka">Semangka</option>
+  <option value="Melon">Melon</option>
+  <option value="Pisang">Pisang</option>
+
+  <!-- 🌴 Perkebunan -->
+  <option value="Kelapa Sawit">Kelapa Sawit</option>
+  <option value="Karet">Karet</option>
+  <option value="Kopi">Kopi</option>
+  <option value="Kakao">Kakao (Cokelat)</option>
+  <option value="Tebu">Tebu</option>
+
+  <!-- 🌱 Tanaman Nilai Tinggi -->
+  <option value="Vanili">Vanili</option>
+  <option value="Jahe">Jahe</option>
+  <option value="Kunyit">Kunyit</option>
+  <option value="Kencur">Kencur</option>
+  <option value="Tembakau">Tembakau</option>
+  <option value="Porang">Porang</option>
+      </select>
+
+      <label>Biaya Bibit (Rp/ha):</label>
+      <input type="number" id="biayaBibit" required>
+
+      <label>Biaya Pupuk (Rp/ha):</label>
+      <input type="number" id="biayaPupuk" required>
+
+      <label>Biaya Tenaga Kerja (Rp/ha):</label>
+      <input type="number" id="biayaTenaga" required>
+
+      <label>Estimasi Hasil Panen (ton/ha):</label>
+      <input type="number" id="hasilPanen" required step="0.1">
+
+      <label>Harga Jual (Rp/kg):</label>
+      <input type="number" id="hargaJual" required>
+
+      <button type="submit" class="farm-btn farm-btn-calc">Hitung</button>
+      <button type="reset" class="farm-btn farm-btn-reset">Reset</button>
+    </form>
+    <div id="hasilBiaya" class="farm-result" style="display:none;"></div>
+  </div>
+</div>
+
     <!-- About-->
     <section class="page-section" id="about">
       <div class="container">
@@ -776,6 +974,138 @@
         </ul>
       </div>
     </section>
+
+    <!-- FAQ Section with Responsive Accordion -->
+    <section class="page-section bg-light" id="faq">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-heading text-uppercase">Pertanyaan Umum</h2>
+          <h3 class="section-subheading text-muted">
+            Temukan jawaban untuk pertanyaan yang sering diajukan tentang pertanian modern
+          </h3>
+        </div>
+        
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="accordion" id="faqAccordion">
+              <!-- FAQ Item 1 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faqHeading1">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse1" aria-expanded="true" aria-controls="faqCollapse1">
+                    <i class="fas fa-seedling me-3"></i>
+                    Apa itu pertanian modern dan mengapa penting?
+                  </button>
+                </h2>
+                <div id="faqCollapse1" class="accordion-collapse collapse show" aria-labelledby="faqHeading1" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    <p>Pertanian modern adalah pendekatan pertanian yang menggunakan teknologi, data, dan metode ilmiah untuk meningkatkan produktivitas, efisiensi, dan keberlanjutan. Ini penting karena:</p>
+                    <ul>
+                      <li>Meningkatkan hasil panen dengan input yang lebih sedikit</li>
+                      <li>Mengurangi dampak lingkungan</li>
+                      <li>Menghemat waktu dan tenaga petani</li>
+                      <li>Meningkatkan kualitas produk</li>
+                      <li>Membantu mengatasi tantangan perubahan iklim</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ Item 2 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faqHeading2">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse2" aria-expanded="false" aria-controls="faqCollapse2">
+                    <i class="fas fa-tractor me-3"></i>
+                    Alat pertanian apa yang paling penting untuk petani pemula?
+                  </button>
+                </h2>
+                <div id="faqCollapse2" class="accordion-collapse collapse" aria-labelledby="faqHeading2" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    <p>Untuk petani pemula, beberapa alat pertanian modern yang penting:</p>
+                    <ul>
+                      <li><strong>Traktor Mini:</strong> Untuk membajak dan menggemburkan tanah</li>
+                      <li><strong>Transplanter:</strong> Untuk menanam bibit secara otomatis</li>
+                      <li><strong>Sensor Tanah:</strong> Untuk memantau kelembapan dan nutrisi</li>
+                      <li><strong>Sistem Irigasi Otomatis:</strong> Untuk mengatur penyiraman</li>
+                      <li><strong>Aplikasi Pertanian:</strong> Untuk pencatatan dan monitoring</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ Item 3 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faqHeading3">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse3" aria-expanded="false" aria-controls="faqCollapse3">
+                    <i class="fas fa-mobile-alt me-3"></i>
+                    Bagaimana teknologi digital membantu petani?
+                  </button>
+                </h2>
+                <div id="faqCollapse3" class="accordion-collapse collapse" aria-labelledby="faqHeading3" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    <p>Teknologi digital memberikan berbagai manfaat bagi petani:</p>
+                    <ul>
+                      <li><strong>Monitoring Real-time:</strong> Memantau kondisi tanaman dan cuaca</li>
+                      <li><strong>Pencatatan Digital:</strong> Mencatat kegiatan pertanian dengan mudah</li>
+                      <li><strong>Prediksi Cuaca:</strong> Mengantisipasi kondisi cuaca ekstrem</li>
+                      <li><strong>Pasar Digital:</strong> Menjual hasil panen langsung ke konsumen</li>
+                      <li><strong>Manajemen Keuangan:</strong> Mengatur keuangan pertanian</li>
+                      <li><strong>Komunitas Online:</strong> Berbagi pengalaman dengan petani lain</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ Item 4 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faqHeading4">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse4" aria-expanded="false" aria-controls="faqCollapse4">
+                    <i class="fas fa-leaf me-3"></i>
+                    Apa tips untuk memulai pertanian yang berkelanjutan?
+                  </button>
+                </h2>
+                <div id="faqCollapse4" class="accordion-collapse collapse" aria-labelledby="faqHeading4" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    <p>Berikut adalah tips untuk memulai pertanian berkelanjutan:</p>
+                    <ul>
+                      <li><strong>Rotasi Tanaman:</strong> Menanam jenis tanaman berbeda secara bergantian</li>
+                      <li><strong>Pupuk Organik:</strong> Menggunakan kompos dan pupuk alami</li>
+                      <li><strong>Pengendalian Hama Terpadu:</strong> Menggunakan predator alami</li>
+                      <li><strong>Konservasi Air:</strong> Menggunakan sistem irigasi yang efisien</li>
+                      <li><strong>Teknologi Hijau:</strong> Menggunakan energi terbarukan</li>
+                      <li><strong>Diversifikasi:</strong> Menanam berbagai jenis tanaman</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ Item 5 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faqHeading5">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse5" aria-expanded="false" aria-controls="faqCollapse5">
+                    <i class="fas fa-chart-line me-3"></i>
+                    Bagaimana cara menghitung keuntungan pertanian?
+                  </button>
+                </h2>
+                <div id="faqCollapse5" class="accordion-collapse collapse" aria-labelledby="faqHeading5" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    <p>Untuk menghitung keuntungan pertanian, perhatikan komponen berikut:</p>
+                    <ul>
+                      <li><strong>Biaya Input:</strong> Bibit, pupuk, pestisida, tenaga kerja</li>
+                      <li><strong>Biaya Operasional:</strong> Irigasi, listrik, transportasi</li>
+                      <li><strong>Hasil Panen:</strong> Jumlah dan kualitas produk</li>
+                      <li><strong>Harga Pasar:</strong> Harga jual per unit</li>
+                      <li><strong>Keuntungan = Pendapatan - Total Biaya</strong></li>
+                    </ul>
+                    <p class="mt-3"><strong>Tips:</strong> Gunakan kalkulator pertanian di website ini untuk simulasi yang lebih akurat!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
